@@ -1,0 +1,63 @@
+{
+  "name": "My workflow 4",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "test-webhook",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.2,
+      "position": [
+        -192,
+        -16
+      ],
+      "id": "54da3589-fe52-400f-89b4-9737998e4200",
+      "name": "Webhook",
+      "webhookId": "5a8608d3-7a1d-4fa7-b9fc-875ac0a500a6"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\n  \"status\": \"success\",\n  \"message\": \"POST request received successfully\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        32,
+        -16
+      ],
+      "id": "ef36199c-36be-469f-82a0-d4f52a57707a",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "9b4bb233-b822-4e71-993a-df4693b57247",
+  "meta": {
+    "instanceId": "9edb02d2dd34e455890dd35a263da0fd5ee0b65e160cd314aa6d67be5982c2d0"
+  },
+  "nodeGroups": [],
+  "id": "OeZvmUyBXYYzSvtD",
+  "tags": []
+}
