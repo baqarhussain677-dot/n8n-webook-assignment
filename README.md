@@ -1,1 +1,1 @@
-# n8n-webhook-assignment
+This project is part of my learning journey with n8n and workflow automation. I created a simple workflow that receives POST requests through a webhook and returns a static JSON response. I also tested it using Postman to make sure everything works correctly. The main purpose of this project is to understand how webhooks work and gain practical experience with automation.
